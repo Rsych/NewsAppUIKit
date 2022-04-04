@@ -13,6 +13,8 @@
 		7142748727FB3D150008F1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7142748527FB3D150008F1D4 /* Main.storyboard */; };
 		7142748927FB3D160008F1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7142748827FB3D160008F1D4 /* Assets.xcassets */; };
 		7142748C27FB3D160008F1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7142748A27FB3D160008F1D4 /* LaunchScreen.storyboard */; };
+		7142749527FB3F890008F1D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142749427FB3F890008F1D4 /* Constants.swift */; };
+		7142749827FB3FD60008F1D4 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142749727FB3FD60008F1D4 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7142748827FB3D160008F1D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7142748B27FB3D160008F1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7142748D27FB3D160008F1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7142749427FB3F890008F1D4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7142749727FB3FD60008F1D4 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		7142747E27FB3D150008F1D4 /* NewsAppUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				7142749627FB3FCF0008F1D4 /* Model */,
+				7142749327FB3F6C0008F1D4 /* Config */,
 				7142747F27FB3D150008F1D4 /* AppDelegate.swift */,
 				7142748127FB3D150008F1D4 /* SceneDelegate.swift */,
 				7142748327FB3D150008F1D4 /* ViewController.swift */,
@@ -65,6 +71,22 @@
 				7142748D27FB3D160008F1D4 /* Info.plist */,
 			);
 			path = NewsAppUIKit;
+			sourceTree = "<group>";
+		};
+		7142749327FB3F6C0008F1D4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7142749427FB3F890008F1D4 /* Constants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		7142749627FB3FCF0008F1D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7142749727FB3FD60008F1D4 /* News.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +163,8 @@
 				7142748427FB3D150008F1D4 /* ViewController.swift in Sources */,
 				7142748027FB3D150008F1D4 /* AppDelegate.swift in Sources */,
 				7142748227FB3D150008F1D4 /* SceneDelegate.swift in Sources */,
+				7142749827FB3FD60008F1D4 /* News.swift in Sources */,
+				7142749527FB3F890008F1D4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
