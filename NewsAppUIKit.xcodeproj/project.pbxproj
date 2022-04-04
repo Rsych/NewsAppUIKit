@@ -15,6 +15,7 @@
 		7142748C27FB3D160008F1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7142748A27FB3D160008F1D4 /* LaunchScreen.storyboard */; };
 		7142749527FB3F890008F1D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142749427FB3F890008F1D4 /* Constants.swift */; };
 		7142749827FB3FD60008F1D4 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142749727FB3FD60008F1D4 /* News.swift */; };
+		7142749B27FB40CB0008F1D4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7142749A27FB40CB0008F1D4 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7142748D27FB3D160008F1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7142749427FB3F890008F1D4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7142749727FB3FD60008F1D4 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		7142749A27FB40CB0008F1D4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		7142747E27FB3D150008F1D4 /* NewsAppUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				7142749927FB40BA0008F1D4 /* Service */,
 				7142749627FB3FCF0008F1D4 /* Model */,
 				7142749327FB3F6C0008F1D4 /* Config */,
 				7142747F27FB3D150008F1D4 /* AppDelegate.swift */,
@@ -87,6 +90,14 @@
 				7142749727FB3FD60008F1D4 /* News.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7142749927FB40BA0008F1D4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7142749A27FB40CB0008F1D4 /* NetworkManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7142749B27FB40CB0008F1D4 /* NetworkManager.swift in Sources */,
 				7142748427FB3D150008F1D4 /* ViewController.swift in Sources */,
 				7142748027FB3D150008F1D4 /* AppDelegate.swift in Sources */,
 				7142748227FB3D150008F1D4 /* SceneDelegate.swift in Sources */,
