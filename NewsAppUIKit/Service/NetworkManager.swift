@@ -31,4 +31,24 @@ class NetworkManager {
         }
         .resume()
     }
+    
+    func getImage(urlString: String, completion: @escaping (Data?) -> ()) {
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        if let cachedImage = imageCache.object(forKey: NSString(string: urlString)) {
+            completion(cachedImage as Data)
+        } else {
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                guard error == nil, let data = data else {
+                    completion(nil)
+                    return
+                }
+                self.imageCache.setObject(data as NSData, forKey: NSString(string: urlString))
+                completion(data)
+            }
+            .resume()
+        }
+    }
 }
