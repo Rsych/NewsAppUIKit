@@ -10,8 +10,14 @@ import UIKit
 final class NewsTableViewCell: UITableViewCell {
     var articleVM: ArticleViewModel? {
         didSet {
-            if articleVM != nil {
-                
+            if let articleVM = articleVM {
+                titleLabel.text = articleVM.title
+                NetworkManager.shared.getImage(urlString: articleVM.urlToImage) { (data) in
+                    guard let data = data else { return }
+                    DispatchQueue.main.async {
+                        self.articleImage.image = UIImage(data: data)
+                    }
+                }
             }
         }
     }
