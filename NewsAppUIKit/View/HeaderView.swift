@@ -21,7 +21,7 @@ final class HeaderView: UIView {
     private lazy var headerCircleImage: UIImageView = {
         let v = UIImageView()
         v.translatesAutoresizingMaskIntoConstraints = false
-        v.contentMode = .scaleAspectFit
+        v.contentMode = .scaleAspectFill
         let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
         v.image = UIImage(systemName: "largecircle.fill.circle", withConfiguration: config)?.withRenderingMode(.alwaysOriginal)
         return v
