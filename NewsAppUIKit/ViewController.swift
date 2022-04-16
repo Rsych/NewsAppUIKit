@@ -76,4 +76,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.articleVM = news
         return cell ?? UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let article = vm.newsVM[indexPath.row]
+        guard let url = URL(string: article.url) else { return }
+        
+        let config = SFSafariViewController.Configuration()
+        let safariViewController = SFSafariViewController(url: url, configuration: config)
+        safariViewController.modalPresentationStyle = .fullScreen
+        present(safariViewController, animated: true)
+    }
 }
